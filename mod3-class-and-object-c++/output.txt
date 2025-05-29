@@ -1,2 +1,2 @@
-tamim moye 10 4.56
-tamim toye 10 4.56
+45 5 3.2
+3 5 4.8
