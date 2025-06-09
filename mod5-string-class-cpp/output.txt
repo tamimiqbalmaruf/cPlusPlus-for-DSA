@@ -1,2 +1,7 @@
-0
-hello world
+hello
+bro,
+how
+are
+you
+doing?
+6
