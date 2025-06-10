@@ -7,19 +7,18 @@ int main()
 
     getline(cin, s);
 
-    // cout << s << endl;
-
     stringstream ss(s);
 
     string word;
-    int cnt = 0;
+
+    reverse(word.begin(), word.end());
+    cout << word;
+
     while (ss >> word)
     {
-        cout << word << endl;
-        cnt++;
+        reverse(word.begin(), word.end());
+        cout << " " << word;
     }
-
-    cout << cnt << endl;
 
     return 0;
 }
