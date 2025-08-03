@@ -1,9 +1,8 @@
-#include <iostream>;
+#include <bits/stdc++.h>
 using namespace std;
 
 int main()
 {
-
     int day;
     cin >> day;
 
@@ -18,9 +17,9 @@ int main()
     case 3:
         cout << "Monday";
         break;
-
+    
     default:
-        cout << "Wrong Input";
+    cout << "Wrong Input";
         break;
     }
 
