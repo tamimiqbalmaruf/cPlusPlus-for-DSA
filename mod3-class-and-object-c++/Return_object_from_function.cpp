@@ -18,18 +18,15 @@ public:
 
 Student fun()
 {
-    Student karim(3, 5, 4.8);
-
+    Student karim(10, 5, 4.2);
     return karim;
 }
 
 int main()
 {
-    Student rahim(45, 5, 3.2);
 
     Student karim = fun();
 
-    cout << rahim.roll << " " << rahim.cls << " " << rahim.gpa << endl;
     cout << karim.roll << " " << karim.cls << " " << karim.gpa << endl;
 
     return 0;

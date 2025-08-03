@@ -8,21 +8,22 @@ public:
     int cls;
     double gpa;
 
-    Student(int r, int c, double g)
+    Student(int roll, int cls, double gpa)
     {
-        roll = r;
-        cls = c;
-        gpa = g;
+        this->roll = roll;
+        this->cls = cls;
+        this->gpa = gpa;
     }
 };
 
 int main()
 {
-    Student rahim(45, 5, 3.2);
-    Student karim(3, 5, 4.8);
+
+    Student rahim(10, 8, 4.5);
+    Student bahim(20, 8, 4.7);
 
     cout << rahim.roll << " " << rahim.cls << " " << rahim.gpa << endl;
-    cout << karim.roll << " " << karim.cls << " " << karim.gpa << endl;
-    
+    cout << bahim.roll << " " << bahim.cls << " " << bahim.gpa << endl;
+
     return 0;
 }

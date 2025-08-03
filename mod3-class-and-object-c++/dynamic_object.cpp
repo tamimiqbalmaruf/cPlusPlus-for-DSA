@@ -18,7 +18,7 @@ public:
 
 Student *fun()
 {
-    Student *karim = new Student(3, 5, 4.8);
+    Student *karim = new Student(2, 5, 4.9);
     return karim;
 }
 
