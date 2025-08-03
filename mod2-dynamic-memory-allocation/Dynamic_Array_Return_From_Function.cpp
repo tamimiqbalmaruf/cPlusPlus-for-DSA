@@ -3,10 +3,7 @@ using namespace std;
 
 int *fun()
 {
-    // int a[5];
-
     int *a = new int[5];
-
     for (int i = 0; i < 5; i++)
     {
         cin >> a[i];
@@ -17,12 +14,11 @@ int *fun()
 
 int main()
 {
-
-    int *a = fun();
+    int *x = fun();
 
     for (int i = 0; i < 5; i++)
     {
-        cout << a[i] << " ";
+        cout << x[i] << " ";
     }
 
     return 0;
