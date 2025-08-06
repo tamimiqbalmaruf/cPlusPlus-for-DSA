@@ -7,25 +7,26 @@ int main()
 
     // cout << s.size() << endl;
 
-    // cout << s.max_size() << endl;
+    // cout << s.max_size() << endl; // 10^6
+
+    //  cout << s.capacity() << endl;
 
     // s.clear();
 
-    // cout << s.size() << endl;
+    // if (s.empty() == true)
+    // {
+    //     cout << "Empty" << endl;
+    // }
+    // else
+    // {
+    //     cout << "Not Empty" << endl;
+    // }
 
-    s.resize(20, 'y');
+    // s.resize(4);
 
-
-
-    
+    s.resize(15, 'o');
 
     cout << s << endl;
-
-
-
-
-
-
 
     return 0;
 }

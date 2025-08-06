@@ -4,7 +4,6 @@ using namespace std;
 int main()
 {
     string s;
-
     getline(cin, s);
 
     // cout << s << endl;
@@ -12,14 +11,11 @@ int main()
     stringstream ss(s);
 
     string word;
-    int cnt = 0;
+
     while (ss >> word)
     {
         cout << word << endl;
-        cnt++;
     }
-
-    cout << cnt << endl;
 
     return 0;
 }

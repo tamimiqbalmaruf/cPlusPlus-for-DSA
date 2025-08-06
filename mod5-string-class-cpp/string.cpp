@@ -4,16 +4,15 @@ using namespace std;
 int main()
 {
     string s = "Hello";
-
     string s2 = "Hello";
 
     if (s == s2)
     {
-        cout << "Same" << endl;
+        cout << "Same";
     }
     else
     {
-        cout << "Not Same" << endl;
+        cout << "Not Same";
     }
 
     return 0;

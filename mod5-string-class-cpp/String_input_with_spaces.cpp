@@ -5,16 +5,15 @@ int main()
 {
     int x;
     cin >> x;
-    
-    string s;
-    // cin >> s;
-    
+
     cin.ignore();
 
+    string s;
+    // cin.getline(s, 100); // char s[100] not dynamic
     getline(cin, s);
-    
 
-    cout << x << endl;
-    cout << s << endl;
+    //cin >> s;  //without space
+
+    cout << x << endl << s << endl;
     return 0;
 }
