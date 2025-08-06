@@ -4,30 +4,29 @@ using namespace std;
 class Cricketer
 {
 public:
-    int jersey;
+    int jersey_no;
     string country;
 
-    Cricketer(int jersey, string country)
+    Cricketer(int jersey_no, string country)
     {
-        this->jersey = jersey;
+        this->jersey_no = jersey_no;
         this->country = country;
     }
 };
 
 int main()
 {
+    Cricketer *tamim = new Cricketer(7, "Bangla");
+    Cricketer *rafi = new Cricketer(100, "Bangla");
 
-    Cricketer *dhoni = new Cricketer(100, "India");
-    Cricketer *kohli = new Cricketer(18, "India");
+    // rafi->country = tamim->country;
+    // rafi->jersey_no = tamim->jersey_no;
 
-    //    kohli->jersey = dhoni->jersey;
-    //    kohli->country = dhoni->country;
+    *rafi = *tamim; // dereference
 
-    *kohli = *dhoni;
+    delete tamim;
 
-    delete dhoni;
-
-    cout << kohli->jersey << " " << kohli->country << endl;
+    cout << rafi->jersey_no << " " << rafi->country << endl;
 
     return 0;
 }

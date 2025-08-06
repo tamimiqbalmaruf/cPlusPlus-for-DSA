@@ -6,11 +6,15 @@ int main()
     string s;
     cin >> s;
 
+    // for (int i = 0; i < s.size(); i++)
+    // {
+    //     cout << s[i];
+    // }
+
     for (char c : s)
     {
-         cout << c << endl;
+        cout << c;
     }
-    
 
     // cout << s << endl;
     return 0;

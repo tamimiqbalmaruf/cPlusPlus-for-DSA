@@ -20,14 +20,12 @@ int main()
     //     cout << a[i] << " ";
     // }
 
-
     string s;
     cin >> s;
 
     reverse(s.begin(), s.end());
 
     cout << s << endl;
-
 
     return 0;
 }

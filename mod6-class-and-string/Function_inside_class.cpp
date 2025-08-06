@@ -19,16 +19,17 @@ public:
 
     void total()
     {
-        cout << math + english << endl;
+        cout << "Total marks of " << name << " = " << (math + english) << endl;
     }
 };
 
 int main()
 {
-    Student sakib("Sakib Ahmed", 25, 45, 75);
-    sakib.total();
 
-    Student rakib("Rakib Ahmed", 22, 50, 89);
+    Student sakib("Sakib Ahmed", 15, 95, 70);
+    Student rakib("Rakib Ahmed", 13, 71, 90);
+
+    sakib.total();
     rakib.total();
 
     return 0;
