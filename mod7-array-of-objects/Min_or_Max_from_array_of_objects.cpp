@@ -19,7 +19,9 @@ int main()
 
     for (int i = 0; i < n; i++)
     {
-        cin >> a[i].name >> a[i].roll >> a[i].marks;
+        cin.ignore();
+        getline(cin, a[i].name);
+        cin >> a[i].roll >> a[i].marks;
     }
 
     Student mn;
@@ -33,6 +35,6 @@ int main()
     }
 
     cout << mn.name << " " << mn.roll << " " << mn.marks << endl;
-    
+
     return 0;
 }

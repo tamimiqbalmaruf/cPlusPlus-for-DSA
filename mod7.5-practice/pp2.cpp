@@ -9,28 +9,10 @@ public:
     int marks;
 };
 
-bool cmp(Student l, Student r)
-{
-    if (l.marks > r.marks)
-    {
-        return true;
-    }
-    else if (l.marks == r.marks)
-    {
-        return l.roll < r.roll;
-    }
-    else
-    {
-        return false;
-    }
-}
-
 int main()
 {
     int n;
-
     cin >> n;
-
     Student a[n];
 
     for (int i = 0; i < n; i++)
@@ -38,11 +20,18 @@ int main()
         cin >> a[i].name >> a[i].roll >> a[i].marks;
     }
 
-    sort(a, a + n, cmp);
+    int i = 0, j = n - 1;
+
+    while (i < j)
+    {
+        swap(a[i], a[j]);
+        i++;
+        j--;
+    }
 
     for (int i = 0; i < n; i++)
     {
-        cout << a[i].name << " " << a[i].roll << " " << a[i].marks << endl;
+        cout << " " << a[i].name << " " << a[i].roll << " " << a[i].marks << endl;
     }
 
     return 0;
